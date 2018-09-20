@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ErrPop" customModule="textFieldValidate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="43" height="20"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SKF-66-S1u">
+                    <rect key="frame" x="2" y="0.0" width="43" height="20"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="WWz-uk-2uM">
+                            <rect key="frame" x="0.0" y="0.0" width="17" height="20"/>
+                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-error.png" translatesAutoresizingMaskIntoConstraints="NO" id="De6-5L-W3t">
+                            <rect key="frame" x="22" y="0.0" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="Xgh-gq-Dza"/>
+                                <constraint firstAttribute="height" constant="20" id="hGu-TY-JFe"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.8784313725490196" green="0.1764705882352941" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="WWz-uk-2uM" firstAttribute="leading" secondItem="SKF-66-S1u" secondAttribute="leading" id="7kq-v1-KRz"/>
+                        <constraint firstItem="De6-5L-W3t" firstAttribute="top" secondItem="SKF-66-S1u" secondAttribute="top" id="M60-8b-433"/>
+                        <constraint firstAttribute="bottom" secondItem="De6-5L-W3t" secondAttribute="bottom" id="WnX-EY-331"/>
+                        <constraint firstAttribute="trailing" secondItem="De6-5L-W3t" secondAttribute="trailing" constant="1" id="Z9S-1W-eNP"/>
+                        <constraint firstItem="WWz-uk-2uM" firstAttribute="top" secondItem="SKF-66-S1u" secondAttribute="top" id="jt2-4F-wuu"/>
+                        <constraint firstItem="De6-5L-W3t" firstAttribute="leading" secondItem="WWz-uk-2uM" secondAttribute="trailing" constant="5" id="lla-kM-Pa8"/>
+                        <constraint firstAttribute="bottom" secondItem="WWz-uk-2uM" secondAttribute="bottom" id="svC-vK-Kbf"/>
+                        <constraint firstAttribute="height" constant="20" id="v32-Vh-8uh"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                            <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="firstPointX">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="firstPointY">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="SKF-66-S1u" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="2" id="0iN-KA-nQ4"/>
+                <constraint firstItem="SKF-66-S1u" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="2" id="8RK-gN-Cch"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="SKF-66-S1u" secondAttribute="bottom" id="DvS-iZ-51w"/>
+                <constraint firstItem="SKF-66-S1u" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="U5k-XU-aan"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="errMsgLbl" destination="WWz-uk-2uM" id="aKI-0o-l8x"/>
+                <outlet property="errMsgView" destination="SKF-66-S1u" id="q1k-xY-YaT"/>
+            </connections>
+            <point key="canvasLocation" x="89.5" y="152"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic-error.png" width="50" height="50"/>
+    </resources>
+</document>
