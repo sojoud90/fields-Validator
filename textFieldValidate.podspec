@@ -6,10 +6,10 @@ Pod::Spec.new do |s|
   s.version      = "1.0.0"
   s.summary      = "A short description of textFieldValidate."
 
-  s.description  = <<-DESC
-                   DESC
+  #s.description  = <<-DESC
+                   #DESC
 
-  s.homepage     = "http://EXAMPLE/textFieldValidate"
+  #s.homepage     = "http://EXAMPLE/textFieldValidate"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
